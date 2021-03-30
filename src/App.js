@@ -1,12 +1,12 @@
 import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Spinner } from 'react-bootstrap';
 
 
 function App() {
   let [moviedata, adddata] = useState(null);
-  let [date, setdate] = useState("20200302");
+  let [date, setdate] = useState("20210302");
   let [inputdate, changedate] = useState(" ");
 
 
@@ -18,7 +18,10 @@ function App() {
 
 
   if (!moviedata) { //moviedata가 null이라면 LOADING을 반환해라 CLEAR
-    return <div>Loading</div>
+    return <div>
+      <Spinner className="load" md="auto" animation="border" role="status" />
+      <h3 className="loading">Loading...</h3>
+    </div >
   }
 
 
@@ -31,13 +34,13 @@ function App() {
         console.log(moviedata)
       }
       <Navbar bg="dark" expand="lg">
-        <Navbar.Brand className="text-light" href="#home">Movie Charts</Navbar.Brand>
+        <Navbar.Brand className="text-light">Movie Charts</Navbar.Brand>
       </Navbar>
       <>
         <div className="table">
           <input onChange={(e) => {
             changedate(e.target.value)
-          }} placeholder="원하는 날짜 입력 ex> 20200329" />
+          }} placeholder="원하는 날짜 입력 ex> 20200329  * (20040101 ~ 현재) *" />
           <button onClick={() => {
             setdate(inputdate);
           }}>검색하기</button>
