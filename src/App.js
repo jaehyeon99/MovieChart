@@ -34,7 +34,7 @@ function App() {
         console.log(moviedata)
       }
       <Navbar bg="dark" expand="lg">
-        <Navbar.Brand className="text-light">Movie Charts</Navbar.Brand>
+        <Navbar.Brand className="text-light Nav">Movie Charts</Navbar.Brand>
       </Navbar>
       <>
         <div className="table">
