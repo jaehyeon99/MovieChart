@@ -24,4 +24,4 @@ http://localhost:3000/
 <img src="https://github.com/jaehyeon99/MovieChart/blob/main/src/img/main_capture.PNG?raw=true" width="100%"/>
 
 ###### movie Chart 출처
-https://www.kobis.or.kr/common/mast/movie/2021/03/54d1577387494a09a0f3cd10e3708ea7.jpg
+https://www.kobis.or.kr/kobis/business/main/main.do
