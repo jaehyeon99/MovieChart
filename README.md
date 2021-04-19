@@ -20,7 +20,7 @@ http://localhost:3000/
 #### 원하는 날짜를 입력하여 (ex. 20210330) 그 날의 영화 순위 검색
 
 
-### EXample  2020.01.02 Movie Chart (20210102)
+### EXample  2020.01.02 Movie Chart 예시날짜 (20210102)
 <img src="https://github.com/jaehyeon99/MovieChart/blob/main/src/img/main_capture.PNG?raw=true" width="100%"/>
 
 ###### movie Chart 출처
